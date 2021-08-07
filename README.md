@@ -27,7 +27,7 @@ python texturegen.py --data_folder=DCor --img_name=Texture19.png
 python texturegen.py --data_folder=DCor --img_name=Texture22.png
 
 ```
-After slgihtly more than 1 minute for each scene, you can find intermediate outputs in `outputs` folder, and final results in `results` folder.
+After slightly more than 1 minute for each scene, you can find intermediate outputs in `outputs` folder, and final results in `results` folder.
 
 
 ### Results
