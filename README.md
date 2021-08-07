@@ -1,0 +1,1 @@
+# pytorch_sliced_wasserstein_loss
