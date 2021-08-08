@@ -1,4 +1,4 @@
-## A Sliced Wasserstein Loss for Neural Textyre Sythesis - PyTorch version
+## A Sliced Wasserstein Loss for Neural Texture Synthesis - PyTorch version
 
 This is an unofficial, refactored PyTorch implementation of ["A Sliced Wasserstein Loss for Neural Texture Synthesis" paper](https://github.com/tchambon/A-Sliced-Wasserstein-Loss-for-Neural-Texture-Synthesis) [CVPR 2021].
 
