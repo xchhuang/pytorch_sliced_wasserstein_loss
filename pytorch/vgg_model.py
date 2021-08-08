@@ -1,5 +1,5 @@
 """
-Implement the custimization of VGG in pytorch, may be inconsistent to tf2 version and the paper
+Implement the customization of VGG-19 in pytorch, may be inconsistent to the official tf2 version
 """
 import torch
 import torch.nn as nn

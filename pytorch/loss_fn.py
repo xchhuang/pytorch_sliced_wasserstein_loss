@@ -1,5 +1,5 @@
 """
-Implement the slicing operation in pytorch, also make comparison with tf2 version
+Implement the slicing operation in PyTorch
 """
 import torch
 import numpy as np

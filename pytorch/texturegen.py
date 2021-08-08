@@ -1,5 +1,5 @@
 """
-Implement the main pipeline of the paper in PyTorch
+Implement the texture synthesis pipeline(same resolution, without spatial tag) of the paper in PyTorch
 """
 import matplotlib.pyplot as plt
 import numpy as np
