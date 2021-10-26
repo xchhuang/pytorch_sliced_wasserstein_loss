@@ -80,6 +80,7 @@ def fit(nb_iter, texture, extractor):
     optimizer = torch.optim.LBFGS([image.requires_grad_()], lr=1, max_iter=50, max_eval=64, tolerance_grad=0, tolerance_change=0)
     # optimizer = torch.optim.Adam([image.requires_grad_()], lr=0.02)   # use adam
 
+    losses = []
     for i in range(nb_iter):
         def closure():
             optimizer.zero_grad()
@@ -89,6 +90,7 @@ def fit(nb_iter, texture, extractor):
             loss = slicing_torch(output_features)
             # print(f'iter {i + 1} loss {loss}')
             loss.backward()
+            losses.append(loss.item())
             return loss
 
         optimizer.step(closure)
@@ -120,6 +122,11 @@ def fit(nb_iter, texture, extractor):
 
         # Change random directions (optional)
         slicing_torch.update_slices(targets)
+
+        plt.figure(1)
+        plt.plot(losses)
+        plt.savefig(output_folder + '/losses.jpg', bbox_inches='tight', pad_inches=0, dpi=200)
+        plt.clf()
 
     return image
 

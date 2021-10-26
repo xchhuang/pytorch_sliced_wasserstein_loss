@@ -16,7 +16,7 @@ class Slicing_torch(torch.nn.Module):
 
     def update_slices(self, layers):
         directions = []
-        for l in layers:    # converted to [B, W, H, D]
+        for l in layers:  # converted to [B, W, H, D]
             if l.ndim == 4:
                 l = l.permute(0, 2, 3, 1)
             if l.ndim == 5:
@@ -33,7 +33,6 @@ class Slicing_torch(torch.nn.Module):
             directions.append(cur_dir)
         self.directions = directions
         self.target = self.compute_target(layers)
-
 
     def compute_proj(self, input, layer_idx, repeat_rate):
         if input.ndim == 4:
