@@ -30,18 +30,18 @@ python texturegen.py --data_folder=DCor --img_name=Texture22.png
 After slightly more than 1 minute for each scene, you can find intermediate outputs in `outputs` folder, and final results in `results` folder.
 
 
-### Results
+### Sample Results
 
 Input                      |  Synthesized
 :-------------------------:|:-------------------------:
-![](results/input.jpg/resized-input.jpg)  |  ![](results/input.jpg/output.jpg)
-![](results/berry.png/resized-input.jpg)  |  ![](results/berry.png/output.jpg)
-![](results/Texture32.jpg/resized-input.jpg)  |  ![](results/Texture32.jpg/output.jpg)
-![](results/64.png/resized-input.jpg)  |  ![](results//64.png/output.jpg)
-![](results/Texture22.png/resized-input.jpg)  |  ![](results/Texture22.png/output.jpg)
-![](results/Texture19.png/resized-input.jpg)  |  ![](results/Texture19.png/output.jpg)
-![](results/2.png/resized-input.jpg)  |  ![](results/2.png/output.jpg)
-![](results/Texture13.png/resized-input.jpg)  |  ![](results/Texture13.png/output.jpg)
+![](sample_results/input.jpg/resized-input.jpg)  |  ![](sample_results/input.jpg/output.jpg)
+![](sample_results/berry.png/resized-input.jpg)  |  ![](sample_results/berry.png/output.jpg)
+![](sample_results/Texture32.jpg/resized-input.jpg)  |  ![](sample_results/Texture32.jpg/output.jpg)
+![](sample_results/64.png/resized-input.jpg)  |  ![](sample_results//64.png/output.jpg)
+![](sample_results/Texture22.png/resized-input.jpg)  |  ![](sample_results/Texture22.png/output.jpg)
+![](sample_results/Texture19.png/resized-input.jpg)  |  ![](sample_results/Texture19.png/output.jpg)
+![](sample_results/2.png/resized-input.jpg)  |  ![](sample_results/2.png/output.jpg)
+![](sample_results/Texture13.png/resized-input.jpg)  |  ![](sample_results/Texture13.png/output.jpg)
 
 ### References
 * [Official Tensorflow version](https://github.com/tchambon/A-Sliced-Wasserstein-Loss-for-Neural-Texture-Synthesis)
