@@ -10,9 +10,9 @@ test/*
 outputs
 outputs/*
 */outputs/*
-results_final
-results_final/*
-*/results_final/*
+results
+results/*
+*/results/*
 tb
 tb/*
 */tb/*
@@ -33,7 +33,4 @@ build/*
 Slides
 Slides/*
 */Slides/*
-data
-data/*
-*/data/*
 *.blend1
