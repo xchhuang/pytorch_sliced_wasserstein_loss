@@ -15,7 +15,7 @@ from vgg_model import VGG19Model
 from loss_fn import Slicing_torch
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-extractor = VGG19Model(device, 3)  # customized_vgg_model in pytorch
+extractor = VGG19Model(device, 3).to(device)  # customized_vgg_model in pytorch
 
 parser = argparse.ArgumentParser(description='Texture generation')
 # parser.add_argument('filename', help='filename of the input texture')
@@ -78,7 +78,7 @@ def fit(nb_iter, texture, extractor):
     plt.imsave(output_folder + '/init.jpg', image.permute(0, 2, 3, 1).detach().cpu().numpy()[0])
 
     optimizer = torch.optim.LBFGS([image.requires_grad_()], lr=1, max_iter=50, max_eval=64, tolerance_grad=0, tolerance_change=0)
-    # optimizer = torch.optim.Adam([image.requires_grad_()], lr=0.02)   # use adam
+    # optimizer = torch.optim.Adam([image.requires_grad_()], lr=0.001)   # use adam
 
     losses = []
     for i in range(nb_iter):
